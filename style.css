@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Global Styles */
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+.section-p1 {
+  padding: 40px 80px;
+}
+.section-m1 {
+  margin: 40px 0;
+}
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: antiquewhite;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+body {
+  width: 100%;
+}
+#header{
+    display: flex;
+    align-items:center ;
+    justify-content:space-between;
+    padding: 20px 70px;
+    background-color:rgb(201, 165, 118); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position:relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(39, 28, 69);
+
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(103, 107, 162);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height:2px;
+    background: rgb(103, 107, 162);
+    position:absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#hero{
+    background-image: url("img/hero.jpg");
+    height: 90vh;
+    width:100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h3{
+    padding-left: 25%;
+    font-style:italic;
+}
+#hero h1{
+    padding-top: 40px;
+    padding-left: 15%;
+}
+#hero h2{
+    color: #08410e;
+    padding-left: 10%;
+}
+#hero h4{
+    padding-bottom: 15px;
+    padding-left: 12%;
+    font-weight: 400;
+}
+#hero button {
+    font-weight: 700;
+    background-image: url("img/button.png");
+    background-color: transparent;
+    border: 0;
+    color: #08410e;
+    padding: 14px 80px; /* Adjust padding as needed */
+    padding-left: 20%; /* Shifts content and background */
+    margin-left: 20px; /* Shift button to the right */
+    background-position: right 5px; /* Adjust position of the background */
+    background-repeat: no-repeat; /* Ensure the background doesn't repeat */
+}
+#product1{
+  text-align:center;
+}
+#product1 .pro-container{
+  display:flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+#product1 .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border:1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+#product1 .pro:hover{
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.09);
+}
+#product1 .pro img{
+  width: 100%;
+  border-radius: 20px;
+}
+#product1 .pro .des{
+  text-align: start;
+  padding: 10px 0 ;
+}
+#product1 .pro .des span{
+  color:#606063;
+  font-size: 12px;
+}
+#product1 .pro .des h5{
+  padding-top: 7px;
+  color: rgb(23, 66, 23);
+  font-size: 14px;
+}
+#product1 .pro .des i{
+  font-size: 12px ;
+  color: rgb(250, 167, 14);
+}
+#product1 .pro .des h4{
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(59, 112, 59);
+}
+#product1 .pro .cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e6f0e7;
+  font-weight: 600;
+  color: #088178;
+  border: 1 px solid #cce7d0;
+  position:absolute;
+  bottom:20px;
+  right: 10px;
+}
+#banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("img/banner.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+#banner h2{
+  font-size: 30px;
+  padding: 10px 0;
+
+}
+#banner h2 span{
+  color:#08410e;
+}
+#banner button:hover{
+  background: #088178;
+  color: antiquewhite;
+}
+
+
+
